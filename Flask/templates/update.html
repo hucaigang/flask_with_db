@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+</head>
+<body>
+    <form action="{{ url_for('update') }}" method="post">
+        <table>
+            <tbody>
+                <tr>
+                    <td>需要更新的学生名:</td>
+                    <td><input type="text" placeholder="请输入学生名" name="username"></td>
+                </tr>
+                <tr>
+                    <td>需要更新的学生学号:</td>
+                    <td><input type="text" placeholder="请输入学生学号" name="usernum"></td>
+                </tr>
+                <tr>
+                    <td>新的学生成绩:</td>
+                    <td><input type="text" placeholder="请输入学生成绩" name="new_userscore"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="确定"></td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+</html>

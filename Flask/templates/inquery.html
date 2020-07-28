@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+</head>
+<body>
+    <form action="{{ url_for('inquery') }}" method="post">
+        <table>
+            <tbody>
+                <tr>
+                    <td>学生名:</td>
+                    <td><input type="text" placeholder="请输入学生名" name="username"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="确定"></td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+</html>
